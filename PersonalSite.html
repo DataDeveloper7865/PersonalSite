@@ -10,33 +10,26 @@
 
         <link rel="stylesheet" href="css/styles.css">
     </head>
-
-    <div class = "header">
-        <div id = "header-content">
-            <ul>
-                <li> Landing Page </li>
-                <li> About </li>
-                <li> Contact </li>
-            </ul>
-        </div>
-    </div>
-
-    <div class = "landing-page">
-        <h1> Landing Page </h1>
-
-    </div>
-
-    <div class = "about">
-        <h1> About </h1>
-
-    </div>
-
-    <div class = "contact">
-        <h1> Contact </h1>
-
-    </div>
-
     <body>
+
+        <ul>
+            <li><a href="#home">Landing Page</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li style="float:right"><a class="active" href="#about">About</a></li>
+          </ul>
+
+
+        <div class = "landing-page" id="home">
+            <h1> Landing Page </h1>
+        </div>
+
+        <div class = "about" id = "about">
+            <h1> About </h1>
+        </div>
+
+        <div class = "contact" id = "contact">
+            <h1> Contact </h1>
+        </div>
         <script src="js/script.js" > </script>
     </body>
 </html>
