@@ -9,6 +9,10 @@
     padding: 10px;
 } */
 
+footer {
+  text-align: center;
+}
+
 .landing-page {
     margin: auto;
     width: 95%;
