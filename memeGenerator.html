@@ -1,23 +1,65 @@
 <!DOCTYPE html>
 
-<html>
+<html lang="en">
     <head>
         <meta charset="utf-8">
 
         <title>Steve's Meme Generator</title>
 
-        <meta name = "description" content="Steve's Meme Generator" > 
-        <meta name = "author"  content = "Steve" >
+        <meta name = "description" content="Steve's Meme Generator" >
+        <meta name = "author"  content = "Steve">
+        <meta name = "viewport" content="width=device-width">
 
         <link rel = "stylesheet" href = "css/styles.css"> 
+        <script type="text/javascript" src="js/script.js" ></script>
 
     </head>
 
 
     <body>
-        <h1>  Hello world from Meme Generator!!! </h1>
+        <ul>
+            <li><a href="index.html#home"> Home </a></li>
+            <li><a href="index.html#contact">Contact</a></li>
+            <li><a href="memeGenerator.html"> Meme Generator</a></li>
+            <li style="float:right"><a class="active" href="index.html#about">About</a></li>
+          </ul>
+        <h1>  Welcome to Steve's Meme Generator </h1>
 
-        
+        <div class="flexbox-container" >
+            <form id = 'meme-form' action='#' method='POST'>
+                <div class='form-box error' data-errormsg=''>
+                    <label for="top-text">Top Text</label>
+                    <input type='text' id='top-text' autofocus placeholder="Top Text" tabindex="1"/>
+                </div>
+                <div class='form-box' data-errormsg="">
+                    <label for="btm-text">Bottom Text</label>
+                    <input type="text" id='btm-text' autofocus placeholder="Bottom Text" tabindex="2">
+                </div>
+                <div class='form-box' data-errormsg="">
+                    <label for="img-link">Link To Image</label>
+                    <input type="text" id='img-link' autofocus placeholder="Link To Image" tabindex="2">
+                </div>
+                <div class="form-box">
+                    <button id='button-cancel'> Cancel</button>
+                    <button id='button-submit'> Create My Meme</button>
+                </div>
+            </form>
+        </div>
+
+        <div id = "memeDiv" >
+            <h1 id = "memeHeader"> See Your Meme's Below</h1>
+        </div>
+
+  <!--    
+        <div class="flexbox-container" >
+            <div class="flexbox-item flexbox-item-1"> </div>
+            <div class="flexbox-item flexbox-item-2"> </div>
+            <div class="flexbox-item flexbox-item-3"> </div>
+        </div>
+
+    -->
+      
+
     </body>
 
 </html>

@@ -1,13 +1,5 @@
 
-
-/* header */
-
-/* .header {
-    margin: auto;
-    width: 95%;
-    border: 3px solid green;
-    padding: 10px;
-} */
+/** Navigiation Menu **/
 
 footer {
   text-align: center;
@@ -70,4 +62,107 @@ ul {
   .active {
     background-color: #4CAF50;
   }
+
+  h1 {
+    text-align: center;
+  }
+
+  /** FORM STYLING **/
+
+form{
+  margin: 2rem;
+  width: 800px;
+}
+.form-box{
+    padding: 1rem;
+    clear: both;
+    width: 100%;
+    position: relative;
+}
+.form-box label{
+    font-size: 1rem;
+    float: left;
+    width: 100px;
+    margin-right: 20px;
+}
+.form-box input{
+    font-size: 1rem;
+    width: 300px;
+    padding: 0.25rem 1rem;
+}
+.form-box select{
+    font-size: 1rem;
+    width: 300px;
+    padding: 0.25rem 1rem;
+}
+.form-box option{
+    font-size: 1rem;
+    width: 300px;
+    padding: 0.25rem 1rem;
+}
+.form-box button{
+    font-size: 1rem;
+    border: none;
+    padding: 0.25rem 2rem;
+    margin-right: 1rem;
+    color: white;
+    background-color: #333;
+    cursor: pointer;
+}
+
+.error::after{
+    background-color: hsl(10, 60%, 50%);
+    color: papayawhip;
+    font-size: 1rem;
+    line-height: 1.8;
+    width: 350px;
+    padding-left: 1rem;
+    position:absolute;
+    right: 0;
+    content: attr(data-errormsg);
+}
+
+/**Flex box Syling **/
+
+.flexbox-container {
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.flexbox-item {
+  width: 25%;
+  margin: 10px;
+  border: 3px solid #333;
+  background-color: #dfdfdf;
+}
+
+.flexbox-item-1 {
+  min-height: 100px;
+}
+
+.flexbox-item-2 {
+  min-height: 200px;
+}
+
+.flexbox-item-3 {
+  min-height: 300px;
+}
+
+.memeClass {
+  margin: 3%;
+  position: relative;
+}
+
+.topText {
+  position: absolute;
+  top: 17px;
+  left: 50px;
+}
+
+.bottomText {
+  position: absolute;
+  bottom: 20px;
+  left: 10px;
+}
 
